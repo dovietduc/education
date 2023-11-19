@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="preload" href="/_next/static/media/184967621ad753d9-s.p.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/css/9eac0427f9426679.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/9eac0427f9426679.css" data-n-g="" /><noscript
+        data-n-css=""></noscript>
+
+</head>
+
+<body>
+    <div id="__next">
+        <div class="__className_81533e">
+           
+
+            <nav class="">
+                <div class="2xl:max-w-7xl mx-auto px-3 lg:px-6 py-3">
+                    <div class="flex flex-wrap items-center justify-between ">
+                        <div class="flex-shrink-0 flex items-center mr-14"><a href="/">
+
+                                <img src="/images/logo.jpg" alt=""
+                                    style="width: 80px; height: 80px; border-radius: 50%;">
+
+
+                            </a></div><button type="button"
+                            class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none  focus:bg-blue-750 text-gray-400 hover:bg-blue-600"
+                            aria-controls="navbar-default" aria-expanded="false"><span class="sr-only">Expand main
+                                menu</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 24 24" height="27" width="27" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                            </svg></button>
+                        <ul class="max-h-0 opacity-0 flex flex-col items-start mt-4 text-sm  md:flex-row md:space-x-1 md:mt-0 md:border-0 w-full md:max-h-screen h-screen md:h-auto md:opacity-100 md:w-auto"
+                            id="navbar-default">
+
+
+                            <li>
+                                <a class="block px-4 py-2 outline-none no-underline hover:no-underline bg-violet-500 hover:bg-violet-400 rounded-3xl"
+                                    href="https://www.youtube.com/channel/UCCkH-votwCOpd6FjCoQiWoA">
+                                    <div class="text-white  text-sm transition-colors duration-300">Youtube</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <main class="py-4">
+                <div class="container">
+
+
+                    <div class="grid grid-cols-1  gap-8 my-10">
+                        <div class="md:mx-4">
+                            
+                           
+                            <h2 class="text-3xl">Nội dung khóa học</h2>
+                            <div class="py-6 max-w-2xl course_list">
+                               
+                                <div class="mb-5">
+                                    <header class="flex cursor-pointer">
+                                        <h3 class="text-lg font-semibold mb-2 inline flex-grow">The Essentials</h3><span
+                                            class="w-5 h-5 text-gray-400 inline-block transition-transform duration-300 ease-out ">
+                                        </span>
+                                    </header>
+                                    <ul
+                                        class="overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0">
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </main>
+            
+        </div>
+    </div>
+
+    <script>
+        let courses = [
+            'Khái niệm về độ phức tạp thuật toán',
+            'Thuật toán & Thực hành Cơ bản',
+            'Đệ quy & Lập trình động',
+            'Thuật toán tìm kiếm',
+            'Thuật toán sắp xếp',
+            'Độ phức tạp của không gian',
+            'Thuật toán tập hợp (mảng)',
+            'Các thuật toán phức tạp hơn và cách giải quyết vấn đề về mã',
+            'Lists & Tables',
+            'btree',
+            'Queues & Heaps'
+        ];
+
+        function addData() {
+            let courseList = '';
+            courses.forEach(
+                function(element) {
+                    courseList = courseList + `<div class="mb-5">
+                                    <header class="flex cursor-pointer">
+                                        <h3 class="text-lg font-semibold mb-2 inline flex-grow">${element}</h3><span
+                                            class="w-5 h-5 text-gray-400 inline-block transition-transform duration-300 ease-out ">
+                                        </span>
+                                    </header>
+                                    <ul
+                                        class="overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0">
+                                    </ul>
+                                </div>`;
+                }
+            );
+            document.querySelector('.course_list').innerHTML = courseList;
+        }
+
+        addData();
+    </script>
+
+
+</body>
+
+</html>
